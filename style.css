@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sidebar ul li {
+    list-style-type: none; 
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white; 
+    background-color: #555;
+    margin-bottom: 5px; 
+    border-radius: 5px; 
+    transition: 0.15s;
+}
+
+.sidebar ul li a:hover {
+    background-color:#050505;
+}
+
+.sidebar ul li a:active{
+    opacity: 0.5;
+}
+
+.container {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.rows-input, .column-input {
+    display: inline-block;
+    width: calc(50% - 25px);
+    margin-top: 20px;
+    vertical-align: top;
+}
+
+.rows-input label, .column-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rows-input input, .column-input input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.button-div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-multiply {
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.15s;
+    border-radius: 10px;
+}
+
+.button-multiply:hover {
+    opacity: 0.8;
+}
+
+.button-multiply:active {
+    opacity: 0.4;
+}
+
+.matrix-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.matrix {
+    margin: 10px;
+    text-align: center;
+}
+
+.matrix input {
+    width: 50px;
+    margin: 2px;
+}
+
+.result-cell {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    margin: 2px;
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 20px;
+}
